@@ -121,7 +121,7 @@ public class Paging {
 							//System.out.println(RANDOM.toString());
 						}
 						
-						if(replacement_algo.equals("fifo")||replacement_algo.equals("lru"))
+						if(replacement_algo.equals("fifo"))
 						{
 							out_page=FIFO.get(0);
 							residency[out_page%10]+=(i-entry_time.get(FIFO.get(0)));
